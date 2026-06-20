@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshith Kesari</title>
+<meta name="description" content="Akshith Kesari — incoming CSE student at VIT Vellore, specialising in Cybersecurity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Back to top">Akshith Kesari</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#journey" data-nav>Journey</a></li>
+      <li><a href="#interests" data-nav>Interests</a></li>
+      <li><a href="#learning" data-nav>Learning</a></li>
+      <li><a href="#vision" data-nav>Vision</a></li>
+      <li><a href="#contact" data-nav class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="hero-content" id="heroContent">
+    <p class="hero-eyebrow"><span class="eyebrow-dot"></span>FUTURE CSE STUDENT, VIT VELLORE — CYBERSECURITY</p>
+    <h1 class="hero-name">
+      <span class="hero-name-line" data-name>Akshith</span>
+      <span class="hero-name-line hero-name-accent" data-name>Kesari</span>
+    </h1>
+    <p class="hero-subtitle">Incoming CSE student, VIT Vellore<br class="hero-br">Specialising in Cybersecurity</p>
+    <div class="hero-typing">
+      <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+    </div>
+    <a href="#about" class="btn-magnetic" id="exploreBtn">
+      <span class="btn-magnetic-inner">
+        <span>Explore My Journey</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-hint-line"></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>ABOUT</p>
+    <div class="about-card" data-reveal>
+      <div class="about-card-body">
+        <p class="about-greet">Hey, I'm <strong>Akshith Kesari</strong>. Born in 2008, based in India.</p>
+        <p>I'll be starting B.Tech CSE at <strong>VIT Vellore</strong>, specialising in <strong>Cybersecurity</strong>. I like figuring out how things work, and more specifically how they break — that's what pulled me toward security over anything else. Python, AI, ML, general tech — all of that interests me too, but breaking and defending systems is where my head goes first.</p>
+        <p>Still early in all of this. No big résumé yet, just a clear direction and a habit of staying curious. That's the part I'm betting on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY / TIMELINE ============ -->
+<section class="section" id="journey">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>THE RECORD</p>
+    <h2 class="section-title" data-reveal>My Journey</h2>
+    <p class="section-sub" data-reveal>Not a highlight reel — a transcript. Here's how it actually happened.</p>
+
+    <div class="ledger">
+      <div class="ledger-rule" aria-hidden="true"><div class="ledger-rule-fill" id="timelineFill"></div></div>
+
+      <div class="ledger-row">
+        <div class="ledger-year">2008</div>
+        <div class="ledger-node"></div>
+        <div class="ledger-content">
+          <h3>Born</h3>
+          <p>The first entry in the record. India.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row">
+        <div class="ledger-year">2013</div>
+        <div class="ledger-node"></div>
+        <div class="ledger-content">
+          <h3>Started 1st Grade — Johnson Grammar School (ICSE)</h3>
+          <p>Where the actual record begins. Twelve years in one school, start to finish.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row">
+        <div class="ledger-year">2024</div>
+        <div class="ledger-node"></div>
+        <div class="ledger-content">
+          <h3>Completed Grade 10 — Grade A</h3>
+          <p>Finished ICSE schooling at Johnson Grammar School with an A grade, closing out twelve years in the same classrooms.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row">
+        <div class="ledger-year">2025–26</div>
+        <div class="ledger-node"></div>
+        <div class="ledger-content">
+          <h3>11th &amp; 12th — Aspirants IIT Academy</h3>
+          <p>Moved to Aspirants IIT Academy for state board 11th and 12th — the run-up to college, and the point where computer science started to feel like a real direction rather than just an interest.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row ledger-row-highlight">
+        <div class="ledger-year">2026</div>
+        <div class="ledger-node ledger-node-active"></div>
+        <div class="ledger-content">
+          <h3>Cracked VIT Vellore — B.Tech CSE, Cybersecurity</h3>
+          <p>Secured admission to VIT Vellore and chose to specialise in Cybersecurity. The official start of the focused chapter.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row ledger-row-future">
+        <div class="ledger-year">Goal</div>
+        <div class="ledger-node ledger-node-future"></div>
+        <div class="ledger-content">
+          <h3>Become genuinely good at security</h3>
+          <p>Not the destination, just where this is headed. I want to actually be able to break into systems and lock them down properly — not just pass exams about it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERESTS ============ -->
+<section class="section" id="interests">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>WHAT DRIVES ME</p>
+    <h2 class="section-title" data-reveal>Interests</h2>
+    <div class="interest-list">
+      <div class="interest-row" data-reveal>
+        <span class="interest-index">01</span>
+        <div class="interest-row-body">
+          <h3>Cybersecurity</h3>
+          <p>Learning how systems get broken, so I can learn how to defend them.</p>
+        </div>
+      </div>
+      <div class="interest-row" data-reveal>
+        <span class="interest-index">02</span>
+        <div class="interest-row-body">
+          <h3>Python Programming</h3>
+          <p>Writing clean, logical code to solve real problems.</p>
+        </div>
+      </div>
+      <div class="interest-row" data-reveal>
+        <span class="interest-index">03</span>
+        <div class="interest-row-body">
+          <h3>Software Engineering</h3>
+          <p>Learning to design systems that are robust and maintainable.</p>
+        </div>
+      </div>
+      <div class="interest-row" data-reveal>
+        <span class="interest-index">04</span>
+        <div class="interest-row-body">
+          <h3>Open Source</h3>
+          <p>Believing in building and learning together, in the open.</p>
+        </div>
+      </div>
+      <div class="interest-row" data-reveal>
+        <span class="interest-index">05</span>
+        <div class="interest-row-body">
+          <h3>Technology Innovation</h3>
+          <p>Chasing what's next, and how it can help people.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNING GOALS ============ -->
+<section class="section" id="learning">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>WORK IN PROGRESS</p>
+    <h2 class="section-title" data-reveal>Current Learning Goals</h2>
+    <p class="section-sub" data-reveal>Not mastery — momentum. Every bar below is a journey still being walked.</p>
+    <div class="progress-grid" id="progressGrid">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISION ============ -->
+<section class="section section-vision" id="vision">
+  <div class="section-inner">
+    <blockquote class="vision-quote" data-reveal>
+      <span class="vision-mark" aria-hidden="true">“</span>
+      I'd rather understand how something breaks<br class="vision-br">
+      than just <span class="vision-quote-accent">memorise that it works.</span>
+      <span class="vision-mark vision-mark-end" aria-hidden="true">”</span>
+    </blockquote>
+    <p class="vision-attrib" data-reveal>— Akshith Kesari</p>
+  </div>
+</section>
+
+<!-- ============ FUN FACTS ============ -->
+<section class="section" id="facts">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>BY THE NUMBERS</p>
+    <h2 class="section-title" data-reveal>Fun Facts</h2>
+    <div class="stat-strip">
+      <div class="stat-block">
+        <span class="stat-number" data-count-to="2008" data-count-from="1990">1990</span>
+        <span class="stat-label">Birth Year</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-number" data-count-to="12" data-count-from="0">0</span>
+        <span class="stat-label">Years at the Same School</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-number stat-number-text">CSE</span>
+        <span class="stat-label">Branch — VIT Vellore, 2026</span>
+      </div>
+      <div class="stat-block">
+        <span class="stat-number stat-number-infinity">∞</span>
+        <span class="stat-label">Tabs Open Right Now, Probably</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>GET IN TOUCH</p>
+    <h2 class="section-title" data-reveal>Contact</h2>
+    <div class="contact-card" data-reveal>
+      <h3 class="contact-name">Akshith Kesari</h3>
+      <p class="contact-email-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6L11.07 11.96C11.62 12.34 12.38 12.34 12.93 11.96L21 6M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="emailText">akshith.kesari@gmail.com</span>
+      </p>
+      <a class="contact-links" href="https://www.linkedin.com/in/akshith-kesari-869521416/" target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3A2 2 0 0121 5V19A2 2 0 0119 21H5A2 2 0 013 19V5A2 2 0 015 3H19M18.5 18.5V13.2C18.5 11.45 17.16 10.2 15.5 10.2C14.79 10.2 14 10.62 13.59 11.27V10.42H10.69V18.5H13.59V13.69C13.59 13.05 14.11 12.5 14.76 12.5C15.41 12.5 15.6 13.05 15.6 13.69V18.5H18.5M8 8.83A1.6 1.6 0 109.6 7.23 1.6 1.6 0 008 8.83M9.45 18.5V10.42H6.55V18.5H9.45" /></svg>
+        <span>LinkedIn</span>
+      </a>
+      <button class="copy-btn" id="copyBtn" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" id="copyIcon"><rect x="9" y="9" width="11" height="11" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 15V5C5 3.9 5.9 3 7 3H15" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span id="copyLabel">Copy Email</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
